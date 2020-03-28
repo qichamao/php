@@ -1,0 +1,31 @@
+{
+    "name": "qichamao/sdk",
+    "description": "企查猫（前瞻云）Composer SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaohui lam",
+            "email": "xiaohui.lam@aliyun.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qichamao\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": ">=6.3",
+        "illuminate/support": ">5.1"
+    },
+    "suggest": {
+        "laravel/framework": "建议在 Laravel 项目中使用"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qichamao\\QichamaoServiceProvider"
+            ]
+        }
+    }
+}
